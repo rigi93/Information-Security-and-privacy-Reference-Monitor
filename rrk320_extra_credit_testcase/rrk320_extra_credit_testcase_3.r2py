@@ -1,0 +1,9 @@
+
+myfile1=openfile("private_a.txt", True)
+myfile1.writeat("INVertINV", 0)
+myfile1.close()
+
+myfile2=openfile("private_a.txt", True)
+myfile2.writeat("Error", 0)
+myfile2.close()
+

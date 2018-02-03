@@ -1,0 +1,18 @@
+
+
+myfile1=openfile("private_a.txt", True)
+myfile2=openfile("private_b.txt", True)
+myfile1.writeat("INV", 0)
+myfile2.writeat("INV", 0)
+myfile1.writeat("INV", 3)
+myfile2.writeat("INV", 3)
+myfile1.close()
+myfile2.close()
+
+
+myfile3=openfile("private_a.txt", True)
+myfile4=openfile("private_a.txt", True)
+myfile3.writeat("Error", 0)
+myfile4.writeat("Error", 0)
+myfile3.close()
+myfile4.close()
