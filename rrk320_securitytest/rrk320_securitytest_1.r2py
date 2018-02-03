@@ -1,0 +1,6 @@
+myfile1=openfile("private_a.txt", True)
+myfile1.writeat("INVERTED", 0)
+myfile1.close()
+if "private_a.txt" in listfiles():
+  log("Error file not invisible\n")
+

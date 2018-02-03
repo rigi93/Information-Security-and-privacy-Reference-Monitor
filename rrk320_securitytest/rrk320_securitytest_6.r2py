@@ -1,0 +1,12 @@
+myfile1=openfile("private_a.txt", True)
+myfile1.writeat("P", 0)
+myfile1.writeat("E", 1)
+myfile1.writeat("R", 2)
+myfile1.close()
+try:
+  removefile("private_a.txt")
+except RepyArgumentError:
+  pass # There should be an exception here!
+else:
+  log("ERROR! Did not raise an exception when it was supposed to.\n")
+

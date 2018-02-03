@@ -1,0 +1,8 @@
+myfile1=openfile("private_a.txt", True)
+myfile1.writeat("I", 0)
+myfile1.writeat("N", 1)
+myfile1.writeat("V", 2)
+myfile1.close()
+if "private_a.txt" in listfiles():
+  log("Error file not invisible\n")
+
